@@ -114,6 +114,10 @@ body{
     transform-origin: top;
 }
 
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
 .header .search-form input{
     height: 100%;
     width: 100%;
@@ -136,7 +140,6 @@ body{
 
 
 .header .cart-item-container{
-    border: 2px solid red;
     position: absolute;
     top: 100%; right: -100%;
     height: calc(100vh - 9.5rem);
@@ -150,7 +153,6 @@ body{
 }
 
 .header .cart-item-container .cart-item{
-    border: 2px solid salmon;
     position: relative;
     margin: 2rem 0;
     display: flex;
@@ -320,7 +322,7 @@ body{
     }
 }
 
-@media (max-width: 991px){
+@media (max-width: 768px){
 
     #menu-btn{
         display: inline-block;
@@ -344,5 +346,16 @@ body{
         margin: 1.5rem;
         padding: 0.5rem;
         font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html{
+        font-size: 50%;
     }
 }
