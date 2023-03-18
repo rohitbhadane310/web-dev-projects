@@ -47,6 +47,19 @@ section{
     padding: 2rem 7%;
 }
 
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -227,10 +240,40 @@ section{
 }
 
 
+/* about section starts */
 
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
 
+.about .row .images
+{
+    flex: 1 1 45rem;
+}
 
+.about .row .images img{
+    width: 100%;
+}
 
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
 
 
 
