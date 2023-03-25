@@ -1,4 +1,6 @@
-html {
+  
+  
+  html {
     height: 100%;
   }
   body {
@@ -6,7 +8,6 @@ html {
     padding:0;
     font-family: sans-serif;
     background: linear-gradient(cyan, blueviolet);
-    color: b;
   }
 
   .login-box{
