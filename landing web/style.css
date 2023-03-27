@@ -16,7 +16,7 @@
     outline: none; border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all .2s ease-out;
+    transition: all .3s ease-out;
 }
 
 html{
@@ -49,4 +49,293 @@ html{
     font-size: 1.7rem;
     color: var(--light-color);
     margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+
+#menu-btn{
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+    color: var(--main-color);
+    background: var(--bg);
+    display: none;
+}
+
+#menu-btn:hover{
+    color: #fff;
+    background: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for responsiveness added the media query */
+
+@media(max-width: 991px)
+{
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+}
+
+
+@media(max-width: 768px)
+{
+    #menu-btn{
+        display: initial;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 115%; right: 2rem;
+        background: #fff;
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+        border-radius: .5rem;
+        width: 30rem;
+        transform: scale(0);
+        transform-origin: top right;
+        opacity: 0;
+    }
+
+    .header .navbar.active{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        display: block;
+        padding: 1rem;
+        margin:  1rem;
+        border-radius: 0.5rem;
+    }
+
+    .header .navbar a:hover{
+        background: var(--bg);
+    }
+}
+
+@media(max-width: 450px)
+{
+    html{
+        font-size: 50%;
+    }
 }
