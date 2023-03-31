@@ -30,6 +30,13 @@ section{
     padding: 2rem 9%;
 }
 
+.heading{
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
